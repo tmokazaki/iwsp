@@ -19,6 +19,8 @@ Instead of optimizing neural network parameters via gradient descent (backpropag
 iwsp/
 ├── pyproject.toml
 ├── README.md
+├── docs/
+│   └── ARCHITECTURE.md         # Detailed math, residual stream maps, circuit diagrams & parameter tables
 ├── src/iwsp/
 │   ├── __init__.py
 │   ├── core.py                 # IWSPLoop, SandboxExecutor (no-gradient enforcement), Offline & Live API Backends
@@ -84,3 +86,12 @@ GEMINI_API_KEY="your-key" PYTHONPATH=src python3 -m iwsp.cli --mode loop --backe
 ```bash
 PYTHONPATH=src python3 -m unittest discover -s tests -v
 ```
+
+---
+
+## Architecture Documentation
+
+Detailed mathematical formulations, residual stream channel allocations, Attention/MLP circuit diagrams (Mermaid), and parameter/sparsity summary tables for all 17 models across Algorithmic, Subagent-Live, NLP, Neuroscience Brain Encoding, and Radio Simulation domains are available in:
+
+- [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
+
